@@ -1,12 +1,13 @@
 <template>
     <div>
-        <h2 class="text-blue-600"Wpisy na bloga:</h2>
-        <button>@click="pobierzWpisy"refresh</button>
+        <h2 class="text-blue-600"Wpisy na bloga: </h2>
+            <div class="w-100 flex flex-row-reverse"></div>
+        <button@click="pobierzWpisy" class="float-right">refresh</button>
         <div v-for="wpis is wpisy">
             <p>{{ wpis }}</p>
         </div>
         <input v-model="nowyBlog" type="text">
-        <button>@click="dodajWpisy">dodaj</button>
+        <button@click="dodajWpisy">dodaj</button>
     </div>
 </template>
 <script>
